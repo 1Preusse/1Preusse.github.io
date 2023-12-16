@@ -1,0 +1,130 @@
+
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    zoom:100%;
+    user-zoom:fixed;
+ }
+ 
+ header {
+    background-color: #333;
+    padding: 10px;
+ }
+ 
+ nav {
+    display: flex;
+    justify-content: center;
+ }
+ 
+ ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+ }
+ 
+ li {
+    margin: 0 10px;
+ }
+ 
+ a {
+    text-decoration: none;
+    color: #fff;
+    padding: 8px 16px;
+    display: inline-block;
+ }
+ 
+ a:hover {
+    background-color: #555;
+ }
+ 
+ /* Style for the main navigation */
+ .main-nav {
+    background-color: #333;
+    user-zoom: fixed;
+ }
+ 
+ .main-nav ul {
+    display: flex;
+    justify-content: center;
+ }
+ 
+ .main-nav li {
+    margin: 0 20px;
+ }
+ 
+ /* Optional: Change color on hover */
+ .main-nav a:hover {
+    background-color: #555;
+    border-radius: 5px;
+ }
+ /* Style for the active link */
+ .main-nav a.active {
+    background-color: #555;
+    border-radius: 5px;
+ }
+ 
+ header {
+    background-color: #333;
+    padding: 10px;
+ }
+ 
+ .aboutSection {
+    background-color: #474e5d;
+    padding: 20px;
+    color: black;
+    max-width: 50%;
+    border-radius: 10px;
+    margin: 1%;
+ }
+ h2 {
+    margin-bottom: 0.1%;
+ }
+
+ .work-experience {
+    display: flex;
+    flex-direction: column;
+    align-items: center; /* Horizontally center the entries */
+  }
+  
+  .work-entry {
+    position: relative; /* Set the work entry as a positioning context */
+    width: 80%; /* Adjust the width as needed */
+    margin-bottom: 0px;
+    margin-top: 30px;
+    border: 1px solid #ccc;
+    padding: 20px;
+    border-radius: 5px;
+    background-color: #474e5d;
+  }
+  
+  .work-entry h2 {
+    font-size: 24px;
+    margin-bottom: 5px;
+  }
+  
+  .work-entry .date {
+    font-style: italic;
+    margin-bottom: 10px;
+  }
+  
+  .work-entry .description {
+    font-size: 16px;
+    line-height: 1.6;
+  }
+  
+  /* Styles for the button */
+  .btn {
+    position: absolute;
+    bottom: 10px;
+    right: 10px;
+    background-color: #007bff;
+    color: #fff;
+    padding: 10px 15px;
+    border: none;
+    border-radius: 5px;
+    text-decoration: none;
+  }
+  
+  .btn:hover {
+    background-color: #0056b3;
+  }
