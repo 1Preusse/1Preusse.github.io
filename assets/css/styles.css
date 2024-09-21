@@ -3,6 +3,7 @@ body {
    font-family: Arial, sans-serif;
    zoom:100%;
    user-zoom:fixed;
+   background-color: #1b1a1ad9;
 }
 
 header {
@@ -68,12 +69,12 @@ header {
 }
 
 .aboutSection {
-   background-color: #474e5d;
    padding: 20px;
-   color: black;
+   color: lightgrey;
    max-width: 50%;
    border-radius: 10px;
    margin: 1%;
+   margin-left: 23%;
 }
 h2 {
    margin-bottom: 0.1%;

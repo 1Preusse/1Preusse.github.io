@@ -7,7 +7,7 @@
     font-family: Arial, sans-serif;
     zoom:100%;
     user-zoom:fixed;
-    background-color: #474e5d;
+    background-color: #1b1a1ad9;
  }
  header {
     background-color: #333;
@@ -92,6 +92,7 @@
     position: relative;
     background-color: inherit;
     width: 60%;
+    
   }
   
   /* The circles on the timeline */
@@ -129,7 +130,8 @@
     right: 30px;
     border: medium solid white;
     border-width: 10px 0 10px 10px;
-    border-color: transparent transparent transparent white;
+    border-color: transparent transparent transparent #696d74;
+    
   }
   
   /* Add arrows to the right container (pointing left) */
@@ -143,7 +145,7 @@
     left: 30px;
     border: medium solid white;
     border-width: 10px 10px 10px 0;
-    border-color: transparent white transparent transparent;
+    border-color: transparent #696d74 transparent transparent;
   }
   
   /* Fix the circle for containers on the right side */
@@ -154,7 +156,7 @@
   /* The actual content */
   .content {
     padding: 20px 30px;
-    background-color: white;
+    background-color: #696d74;
     position: relative;
     border-radius: 6px;
   }

@@ -4,6 +4,7 @@ body {
     font-family: Arial, sans-serif;
     zoom:100%;
     user-zoom:fixed;
+    background-color: #1b1a1ad9;
  }
  
  header {
@@ -94,7 +95,7 @@ body {
     border: 1px solid #ccc;
     padding: 20px;
     border-radius: 5px;
-    background-color: #474e5d;
+    background-color: #696d74;
   }
   
   .work-entry h2 {
