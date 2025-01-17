@@ -193,4 +193,67 @@
       left: 0%;
     }
   }
+
+
+  /* Keep existing styles */
+
+/* Enhanced responsive timeline styles */
+@media screen and (max-width: 768px) {
+  .timeline::after {
+      left: 31px;
+  }
+
+  .container {
+      width: 100%;
+      padding-left: 70px;
+      padding-right: 25px;
+  }
+
+  .container::before {
+      left: 60px;
+      border: medium solid white;
+      border-width: 10px 10px 10px 0;
+      border-color: transparent #696d74 transparent transparent;
+  }
+
+  .left::after, .right::after {
+      left: 15px;
+  }
+
+  .right {
+      left: 0%;
+  }
+
+  .main-nav ul {
+      display: none;
+      flex-direction: column;
+  }
+
+  .main-nav ul.show {
+      display: flex;
+  }
+
+  .nav-toggle {
+      display: block;
+      padding: 10px;
+      color: white;
+      cursor: pointer;
+  }
+
+  .content {
+      font-size: 0.9rem;
+  }
+}
+
+@media screen and (min-width: 769px) and (max-width: 1024px) {
+  .timeline {
+      width: 90%;
+      margin: 0 auto;
+  }
+
+  .container {
+      width: 45%;
+  }
+}
+
   

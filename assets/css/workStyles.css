@@ -131,3 +131,57 @@ body {
   .btn:hover {
     background-color: #0056b3;
   }
+
+
+  /* Keep existing styles */
+
+/* Add responsive styles */
+@media screen and (max-width: 768px) {
+   .work-experience {
+       width: 95%;
+       margin-left: 2.5%;
+   }
+
+   .work-entry {
+       width: 100%;
+       margin-bottom: 20px;
+   }
+
+   .btn {
+       position: relative;
+       margin-top: 15px;
+       display: block;
+       text-align: center;
+   }
+
+   .main-nav ul {
+       display: none;
+       flex-direction: column;
+   }
+
+   .main-nav ul.show {
+       display: flex;
+   }
+
+   .nav-toggle {
+       display: block;
+       padding: 10px;
+       color: white;
+       cursor: pointer;
+   }
+
+   .description {
+       font-size: 0.9rem;
+   }
+}
+
+@media screen and (min-width: 769px) and (max-width: 1024px) {
+   .work-experience {
+       width: 85%;
+       margin-left: 7.5%;
+   }
+
+   .work-entry {
+       width: 90%;
+   }
+}

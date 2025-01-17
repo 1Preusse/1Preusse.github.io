@@ -107,3 +107,51 @@ body {
     .btn:hover {
       background-color: #0056b3;
     }
+
+/* Your existing styles */
+
+/* Responsive Design */
+@media screen and (max-width: 768px) {
+    .main-nav ul {
+        display: none;
+        flex-direction: column;
+        width: 100%;
+    }
+
+    .main-nav ul.show {
+        display: flex;
+    }
+
+    .nav-toggle {
+        display: block;
+        padding: 10px;
+        color: white;
+        cursor: pointer;
+    }
+
+    .aboutSection {
+        max-width: 90%;
+        margin: 5%;
+    }
+
+    .main-nav li {
+        margin: 10px 0;
+    }
+}
+
+@media screen and (min-width: 769px) {
+    .nav-toggle {
+        display: none;
+    }
+}
+
+/* Add responsive typography */
+html {
+    font-size: 16px;
+}
+
+@media screen and (min-width: 768px) {
+    html {
+        font-size: 18px;
+    }
+}
