@@ -123,11 +123,12 @@ body {
     }
 
     .nav-toggle {
-        display: block;
-        padding: 10px;
-        color: white;
-        cursor: pointer;
-    }
+      display: none;
+      color: white;
+      font-size: 24px;
+      cursor: pointer;
+      padding: 10px;
+  }
 
     .aboutSection {
         max-width: 90%;
@@ -139,19 +140,19 @@ body {
     }
 }
 
-@media screen and (min-width: 769px) {
-    .nav-toggle {
-        display: none;
-    }
-}
+@media screen and (max-width: 768px) {
+   .nav-toggle {
+       display: block;
+   }
 
-/* Add responsive typography */
-html {
-    font-size: 16px;
-}
+   .main-nav ul {
+       display: none;
+       width: 100%;
+       flex-direction: column;
+       text-align: center;
+   }
 
-@media screen and (min-width: 768px) {
-    html {
-        font-size: 18px;
-    }
+   .main-nav ul.show {
+       display: flex;
+   }
 }
