@@ -1,65 +1,338 @@
+```html
 <!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>About Me</title>
-    <link rel="stylesheet" href="assets/css/styles.css">
+    <title>Konstantin Preusser | PhD Student</title>
+
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        html {
+            scroll-behavior: smooth;
+        }
+
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+            line-height: 1.7;
+            color: #222;
+            background: #fff;
+        }
+
+        .container {
+            max-width: 950px;
+            margin: 0 auto;
+            padding: 0 25px;
+        }
+
+        nav {
+            position: sticky;
+            top: 0;
+            background: white;
+            border-bottom: 1px solid #eee;
+            z-index: 100;
+        }
+
+        nav .container {
+            display: flex;
+            justify-content: center;
+            gap: 2rem;
+            padding: 1rem;
+        }
+
+        nav a {
+            text-decoration: none;
+            color: #555;
+            font-weight: 500;
+        }
+
+        nav a:hover {
+            color: #000;
+        }
+
+        section {
+            padding: 5rem 0;
+        }
+
+        .hero {
+            min-height: 70vh;
+            display: flex;
+            align-items: center;
+        }
+
+        .hero-content {
+            max-width: 750px;
+        }
+
+        h1 {
+            font-size: 3rem;
+            margin-bottom: 0.5rem;
+        }
+
+        h2 {
+            font-size: 2rem;
+            margin-bottom: 1.5rem;
+        }
+
+        h3 {
+            margin-bottom: 0.5rem;
+        }
+
+        .subtitle {
+            font-size: 1.3rem;
+            color: #666;
+            margin-bottom: 2rem;
+        }
+
+        p {
+            margin-bottom: 1rem;
+        }
+
+        .button-group {
+            margin-top: 2rem;
+        }
+
+        .btn {
+            display: inline-block;
+            padding: 12px 24px;
+            margin-right: 10px;
+            margin-bottom: 10px;
+            text-decoration: none;
+            border: 1px solid #222;
+            color: #222;
+            transition: 0.2s;
+        }
+
+        .btn:hover {
+            background: #222;
+            color: white;
+        }
+
+        .research-tags {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 10px;
+        }
+
+        .tag {
+            padding: 8px 14px;
+            background: #f3f3f3;
+            border-radius: 20px;
+        }
+
+        .project {
+            margin-bottom: 2rem;
+        }
+
+        .timeline-item {
+            margin-bottom: 2rem;
+        }
+
+        footer {
+            text-align: center;
+            padding: 3rem 0;
+            border-top: 1px solid #eee;
+            color: #666;
+        }
+
+        @media (max-width: 768px) {
+            nav .container {
+                flex-wrap: wrap;
+                gap: 1rem;
+            }
+
+            h1 {
+                font-size: 2.2rem;
+            }
+
+            h2 {
+                font-size: 1.6rem;
+            }
+        }
+    </style>
 </head>
+
 <body>
-    <header>
-        <nav class="main-nav">
-            <div class="nav-toggle" id="navToggle"></div>
-            <ul>
-                <li><a href="assets/about.html" class="active">About Me</a></li>
-                <li><a href="assets/education.html">Education</a></li>
-                <li><a href="assets/work.html">Work Experience</a></li>
-                <li><a href="assets/projects.html">Side Projects</a></li>
-            </ul>
-        </nav>
-    </header>
-    <main>
-        <div class="aboutSection">
-            <h1>Hi, I'm Konstantin</h1>
-            I'm 25 years old and recently completed my master's degree in Biomedical Engineering at the Technical University of Darmstadt. 
-            As part of my studies, I spent a semester abroad at the Universitat Politècnica de València (UPV) with an ERASMUS scholarship. A time that strengthened both my technical and intercultural skills.
-            <br><br>
-            For my master's thesis, titled <em>What Can EEG Really Tell Us About Language? A Deep Learning Study</em>, 
-            I worked on decoding language-related brain activity using deep neural networks and electroencephalography data. A field at the intersection of neuroscience, signal processing, 
-            and machine learning that I found deeply fascinating.
-            <br><br>
-            I enjoy exploring diverse fields across engineering and computer science. 
-            My interests include medical data science, robotics, machine learning, energy systems, and software development in general. 
-            I like building things. From early Arduino projects in school to modern web apps, desktop tools, and data-driven systems.
-            <br><br>
-            During my studies in Darmstadt, I worked as a teaching assistant for several programming courses, helping students with lecture content and coding assignments. 
-            <br><br>
-            Additionally, I held two research assistant positions. 
-            <br><br>
-            In the first one, I developed a desktop application using ElectronJS, ReactJS, and a MATLAB/Python backend that supports grid planning for 
-            low-voltage distribution networks. Through this, I gained valuable experience in Git workflows, mathematical optimization, 
-            MATLAB, Python, JavaScript, energy science, and technical communication.
-            <br><br>
-            After completing that project, I joined another research project to develop a toolbox for modeling electrical grids as graphs using real-world data from ENEDIS, 
-            France’s largest electricity network operator. This involved extensive data cleaning and analysis, strengthening my skills in SQL (MySQL and PostgreSQL) 
-            and Python libraries like Pandas and NetworkX. It also allowed me to work independently and apply many theoretical concepts from my computer science courses. 
-            <br><br>
-            In my free time, I enjoy swimming and playing Ultimate Frisbee. I also play the piano and guitar, and I’ve been improving my Spanish steadily. 
-            I like reading research-based books. My recent favorites include <em>Breathe</em> by James Nestor and <em>Scary Smart</em> by Mo Gawdat (the list keeps changing).
-            <br><br>
-            I’m always working on side projects, both technical and non-technical. 
-            Currently, I’m collaborating with a friend on a website, compete in some medical image kaggle competitions, but I’m always open to new, meaningful projects. 
-            Time on this planet is limited, so I aim to make the most of it.
-            <br><br>
-            I am in the process of evaluating my next career step and whether this should be in academia or in industry 
-            to find the best place to continue combining my interests in AI, neuroscience, and software development.
-            <br><br>
-            If I ever end up in a quote book, I’d like to be remembered with this one
-            <em>Life begins when you realize that it will end.</em>
-            <br><br>
-            <a href="../referenceLetters/Konstantin_Preusser_CV_NB.pdf" class="btn" target="_blank">Resume</a>
+
+<nav>
+    <div class="container">
+        <a href="#about">About</a>
+        <a href="#research">Research</a>
+        <a href="#projects">Projects</a>
+        <a href="#experience">Experience</a>
+        <a href="#teaching">Teaching</a>
+        <a href="#contact">Contact</a>
+    </div>
+</nav>
+
+<section class="hero" id="about">
+    <div class="container">
+        <div class="hero-content">
+            <h1>Konstantin Preusser</h1>
+
+            <div class="subtitle">
+                PhD Student • AI for Neuroscience • Biomedical Engineer
+            </div>
+
+            <p>
+                I am a PhD student working at the intersection of neuroscience,
+                machine learning, and signal processing.
+                My research focuses on understanding how linguistic information
+                is represented in brain activity and how deep learning models
+                can be used to decode these signals.
+            </p>
+
+            <p>
+                My interests include EEG analysis, representation learning,
+                neural decoding, medical AI, and brain-computer interfaces.
+                I enjoy building research software and applying modern machine
+                learning methods to challenging biomedical problems.
+            </p>
+
+            <div class="button-group">
+                <a href="Konstantin_Preusser_CV.pdf" class="btn" target="_blank">CV</a>
+                <a href="https://github.com/yourusername" class="btn" target="_blank">GitHub</a>
+                <a href="https://linkedin.com/in/yourprofile" class="btn" target="_blank">LinkedIn</a>
+            </div>
         </div>
-    </main>
-    <script src="assets/js/nav.js"></script>
+    </div>
+</section>
+
+<section id="research">
+    <div class="container">
+        <h2>Research Interests</h2>
+
+        <div class="research-tags">
+            <div class="tag">EEG Signal Processing</div>
+            <div class="tag">Deep Learning</div>
+            <div class="tag">Neural Decoding</div>
+            <div class="tag">Representation Learning</div>
+            <div class="tag">Brain-Computer Interfaces</div>
+            <div class="tag">Natural Language Processing</div>
+            <div class="tag">Medical AI</div>
+            <div class="tag">Computational Neuroscience</div>
+        </div>
+
+        <br>
+
+        <h3>Current PhD Research</h3>
+
+        <p>
+            My current work investigates how language-related information can
+            be extracted from EEG recordings using deep neural networks.
+            The goal is to learn meaningful representations from brain signals
+            that can support downstream tasks such as neural decoding and
+            brain-to-text systems.
+        </p>
+    </div>
+</section>
+
+<section id="projects">
+    <div class="container">
+        <h2>Selected Projects</h2>
+
+        <div class="project">
+            <h3>EEG-to-Text Modeling</h3>
+            <p>
+                Development of transformer-based architectures that learn
+                representations from EEG signals and connect them to modern
+                language models.
+            </p>
+        </div>
+
+        <div class="project">
+            <h3>EEG Representation Learning</h3>
+            <p>
+                Investigation of self-supervised and reconstruction-based
+                approaches for learning robust latent representations from
+                neural recordings.
+            </p>
+        </div>
+
+        <div class="project">
+            <h3>Electrical Grid Graph Modeling</h3>
+            <p>
+                Development of software tools for transforming real-world
+                power grid data into graph structures for analysis and planning.
+            </p>
+        </div>
+    </div>
+</section>
+
+<section id="experience">
+    <div class="container">
+        <h2>Research & Professional Experience</h2>
+
+        <div class="timeline-item">
+            <h3>PhD Student</h3>
+            <p>
+                Research on EEG-based language decoding, representation learning,
+                and deep learning methods for neuroscience.
+            </p>
+        </div>
+
+        <div class="timeline-item">
+            <h3>Research Assistant</h3>
+            <p>
+                Development of graph-based electrical grid modeling tools using
+                Python, SQL, Pandas, and NetworkX.
+            </p>
+        </div>
+
+        <div class="timeline-item">
+            <h3>Research Assistant</h3>
+            <p>
+                Development of a desktop application for low-voltage grid planning
+                using React, Electron, Python, and MATLAB.
+            </p>
+        </div>
+    </div>
+</section>
+
+<section id="teaching">
+    <div class="container">
+        <h2>Teaching</h2>
+
+        <p>
+            During my studies and research career, I have worked as a teaching
+            assistant for several programming courses, supporting students with
+            software development, algorithms, and practical coding assignments.
+        </p>
+    </div>
+</section>
+
+<section id="contact">
+    <div class="container">
+        <h2>Contact</h2>
+
+        <p>
+            I am always interested in discussing research, collaboration
+            opportunities, and interdisciplinary projects.
+        </p>
+
+        <p>
+            Email: your.email@example.com
+        </p>
+
+        <p>
+            GitHub: github.com/yourusername
+        </p>
+
+        <p>
+            LinkedIn: linkedin.com/in/yourprofile
+        </p>
+    </div>
+</section>
+
+<footer>
+    © 2026 Konstantin Preusser
+</footer>
+
 </body>
 </html>
+```
